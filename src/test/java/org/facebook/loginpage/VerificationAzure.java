@@ -20,6 +20,7 @@ public class VerificationAzure extends LaunchBrowser {
 		driver.get("https://mayankdemo.azurewebsites.net/webapp/");
 		String urldata = driver.getCurrentUrl();
 		System.out.println(urldata);
+		System.out.println(driver.getTitle());
 		Assert.assertEquals(urldata, "https://mayankdemo.azurewebsites.net/webapp/");
 		
 		
